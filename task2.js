@@ -5,3 +5,30 @@
 //         
 // Запустіть виконане завдання за допомогою Live Server 
 // Перевірте виконання за допомогою команди node tests/task2.test.js
+
+let firstButton = document.getElementById('button1');
+let secondButton = document.getElementById('button2');
+let thirdButton = document.getElementById('button3');
+
+function changeOnclick() {
+  firstButton.style.backgroundColor = 'blue';
+}
+
+firstButton.onclick = changeOnclick;
+
+function changeOndblclick() {
+  secondButton.style.backgroundColor = 'pink';
+}
+
+secondButton.ondblclick = changeOndblclick;
+
+function changeOnmouseover() {
+  thirdButton.style.backgroundColor = 'brown';
+}
+
+function changeOnmouseout() {
+  thirdButton.style.backgroundColor = '';
+}
+
+thirdButton.onmouseover = changeOnmouseover;
+thirdButton.onmouseout = changeOnmouseout;
